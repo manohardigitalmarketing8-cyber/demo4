@@ -1,0 +1,712 @@
+/* =============================================
+Tale Catering - Custom sections & components
+Built on the TemplateMo Tale SEO Agency design system
+============================================= */
+
+/* Hero (home) - photo in a tinted framed card */
+.main-banner::after,
+.main-banner::before {
+  content: none;
+}
+
+/* Sticky header - keep the purple gradient bar when pinned on scroll */
+.background-header {
+  background: rgb(85, 0, 227) !important;
+  background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%) !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.main-banner.hero-banner {
+  padding: 230px 0px 170px 0px;
+}
+
+.main-banner.hero-banner p {
+  padding-right: 0;
+}
+
+.main-banner.hero-banner .hero-photo-card {
+  position: relative;
+  background-color: #f6edff;
+  border: 1px solid #ead6ff;
+  border-radius: 28px;
+  padding: 16px;
+}
+
+.main-banner.hero-banner .hero-photo-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+.main-banner.hero-banner .hero-chip {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  background: rgb(85, 0, 227);
+  background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 1.4;
+  box-shadow: 0px 8px 20px rgba(91, 3, 228, 0.25);
+  max-width: 90%;
+}
+
+/* About preview image */
+.infos .main-content .left-image {
+  background-image: url(../images/catering/chef-about.jpg);
+}
+
+.infos .main-content .left-image img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* ---- Section heading helpers ---- */
+.section-heading.center {
+  text-align: center;
+}
+
+.section-heading.center .line-dec {
+  margin: 0 auto 20px auto;
+}
+
+.section-heading h2 {
+  margin-bottom: 20px;
+}
+
+/* ---- Generic catering cards ---- */
+.service-card,
+.event-card {
+  border: 1px solid #f3d7ff;
+  border-radius: 23px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all .4s;
+}
+
+.service-card:hover,
+.event-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img,
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card .content {
+  padding: 25px;
+}
+
+.service-card h4 {
+  font-size: 20px;
+  color: #2a2a2a;
+  margin-bottom: 12px;
+  transition: all .4s;
+}
+
+.service-card:hover h4 {
+  color: #5b03e4;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #afafaf;
+  margin-bottom: 18px;
+}
+
+.service-card .main-button a,
+.cta .main-button a {
+  padding: 10px 24px;
+  font-size: 13px;
+}
+
+/* ---- Events grid ---- */
+.event-card {
+  border: none;
+  position: relative;
+}
+
+.event-card img {
+  height: 180px;
+}
+
+.event-card .caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 55px 18px 14px 18px;
+  background: linear-gradient(to top, rgba(42, 42, 42, 0.85), rgba(42, 42, 42, 0));
+}
+
+.event-card .caption h4 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* ---- Featured menu cards ---- */
+.menu-card {
+  position: relative;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: all .5s;
+}
+
+.menu-card:hover img {
+  transform: scale(1.06);
+}
+
+.menu-card .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 70px 20px 16px 20px;
+  background: linear-gradient(to top, rgba(42, 42, 42, 0.9), rgba(42, 42, 42, 0));
+}
+
+.menu-card .overlay h4 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.menu-card .overlay span {
+  color: #d9c7f5;
+  font-size: 13px;
+}
+
+/* ---- Why choose us ---- */
+.why-item {
+  text-align: center;
+  border: 1px solid #f3d7ff;
+  border-radius: 23px;
+  padding: 35px 25px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  transition: all .4s;
+}
+
+.why-item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.why-item i {
+  font-size: 40px;
+  color: #5b03e4;
+  margin-bottom: 18px;
+}
+
+.why-item h4 {
+  font-size: 18px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #afafaf;
+  margin: 0;
+}
+
+/* ---- Testimonials ---- */
+.testimonial-item {
+  border: 1px solid #f3d7ff;
+  border-radius: 23px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: all .4s;
+}
+
+.testimonial-item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-item .stars {
+  color: #f5a623;
+  margin-bottom: 15px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+}
+
+.testimonial-item .author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.testimonial-item .author .avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgb(85, 0, 227);
+  background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.testimonial-item .author h6 {
+  font-size: 15px;
+  color: #2a2a2a;
+}
+
+.testimonial-item .author span {
+  font-size: 13px;
+  color: #afafaf;
+}
+
+/* ---- Gallery ---- */
+.gallery-grid .gallery-item {
+  border-radius: 23px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: all .5s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 44px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ---- Image border radius ---- */
+.page-heading .col-lg-5 img {
+  border-radius: 23px;
+  box-shadow: 0px 10px 30px rgba(42, 42, 42, 0.10);
+}
+
+/* ---- CTA: keep buttons on the same line ---- */
+.cta .col-lg-4 {
+  text-align: right;
+}
+
+.cta .main-button,
+.cta .second-button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cta .main-button {
+  margin-right: 14px;
+}
+
+.cta .second-button a {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 9px 24px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  transition: all .3s;
+}
+
+.cta .second-button a:hover {
+  background-color: #fff;
+  color: #5b03e4;
+}
+
+/* ---- Gap between image grids and their CTA buttons ---- */
+#services-preview .text-center,
+#featured-menu .text-center,
+#gallery-preview .text-center {
+  margin-top: 35px;
+}
+
+/* ---- About / approach list ---- */
+.approach-list {
+  margin-top: 25px;
+}
+
+.approach-list li {
+  font-size: 15px;
+  color: #2a2a2a;
+  margin-bottom: 14px;
+}
+
+.approach-list li i {
+  color: #5b03e4;
+  margin-right: 10px;
+}
+
+/* ---- Menu page ---- */
+body.menu-page {
+  padding-bottom: 90px;
+}
+
+.menu-category {
+  margin-bottom: 60px;
+}
+
+.menu-category > h3 {
+  font-size: 24px;
+  color: #2a2a2a;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menu-category > h3 span {
+  color: #c03afe;
+}
+
+.menu-item {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.menu-item input {
+  display: none;
+}
+
+.menu-item-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #f3d7ff;
+  border-radius: 15px;
+  padding: 13px 16px;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.menu-item:hover .menu-item-box {
+  border-color: #d9c7f5;
+}
+
+.menu-item .menu-check-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #d9c7f5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-size: 12px;
+  transition: all .3s;
+  flex-shrink: 0;
+}
+
+.menu-item input:checked + .menu-item-box {
+  border-color: #5b03e4;
+  box-shadow: 0px 0px 10px rgba(91, 3, 228, 0.12);
+}
+
+.menu-item input:checked + .menu-item-box .menu-check-icon {
+  background-color: #5b03e4;
+  border-color: #5b03e4;
+  color: #fff;
+}
+
+.menu-item-name {
+  font-size: 16px;
+  color: #2a2a2a;
+  font-weight: 600;
+}
+
+.menu-item .menu-item-tag {
+  margin-left: auto;
+  font-size: 11px;
+  color: #a586bc;
+  background-color: #f9ebff;
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+/* ---- Selection bar ---- */
+.selection-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1500;
+  background: rgb(85, 0, 227);
+  background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
+  padding: 14px 0;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.selection-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.selection-bar-info {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.selection-bar-info .menu-hint {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffe27a;
+  margin-top: 2px;
+}
+
+/* ---- WhatsApp button ---- */
+.whatsapp-btn {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: #25d366;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.whatsapp-btn:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.whatsapp-btn.purple {
+  background-color: #5b03e4;
+}
+
+/* ---- Contact / quote form tweaks ---- */
+.form-note {
+  font-size: 13px;
+  color: #afafaf;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+#contact-form select,
+#free-quote select {
+  width: 100%;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #f9ebff;
+  border: none;
+  outline: none;
+  padding: 0px 15px;
+  font-size: 14px;
+  color: #2a2a2a;
+  font-weight: 600;
+  margin-bottom: 15px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ---- Contact info cards ---- */
+.contact-info-box {
+  border: 1px solid #f3d7ff;
+  border-radius: 23px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  transition: all .4s;
+}
+
+.contact-info-box:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-box i {
+  font-size: 32px;
+  color: #5b03e4;
+  margin-bottom: 15px;
+}
+
+.contact-info-box h4 {
+  font-size: 18px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.contact-info-box p,
+.contact-info-box a {
+  font-size: 14px;
+  color: #afafaf;
+  margin: 0;
+}
+
+.contact-info-box a:hover {
+  color: #5b03e4;
+}
+
+/* Keep the WhatsApp button legible inside info cards */
+.contact-info-box .whatsapp-btn {
+  color: #fff;
+}
+
+.contact-info-box .whatsapp-btn:hover {
+  color: #fff;
+  opacity: 0.85;
+}
+
+/* ---- Team cards ---- */
+.team-card {
+  border: 1px solid #f3d7ff;
+  border-radius: 23px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all .4s;
+}
+
+.team-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card .content {
+  padding: 20px 25px 25px 25px;
+}
+
+.team-card h4 {
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+.team-card span {
+  font-size: 13px;
+  color: #5b03e4;
+  font-weight: 600;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+  .main-banner.hero-banner {
+    padding: 160px 0px 110px 0px;
+  }
+
+  .main-banner.hero-banner .hero-photo-card {
+    margin-top: 50px;
+  }
+
+  .cta .col-lg-4 {
+    text-align: center;
+  }
+
+  .cta .main-button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .selection-bar .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .service-card img,
+  .event-card img {
+    height: 170px;
+  }
+
+  .menu-card img {
+    height: 200px;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  .whatsapp-btn {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
