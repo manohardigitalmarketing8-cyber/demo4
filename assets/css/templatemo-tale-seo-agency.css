@@ -1835,8 +1835,20 @@ body {
 }
 
 @media (max-width: 767px) {
-  .pre-header {
-    display: none;
+  .pre-header .container {
+    text-align: center;
+  }
+  .pre-header .left-info ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-bottom: 8px;
+  }
+  .pre-header .left-info ul li a {
+    font-size: 13px;
+  }
+  .pre-header .social-icons {
+    text-align: center;
+    margin-top: 5px;
   }
   .header-area {
     top: 0px;
