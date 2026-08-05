@@ -1568,6 +1568,10 @@ Happy Clients Style
 
 .happy-clients ul.nacc li img {
   padding-left: 45px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .happy-clients ul.nacc li h4 {
