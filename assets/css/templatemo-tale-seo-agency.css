@@ -1835,6 +1835,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .pre-header {
+    position: relative;
+  }
   .pre-header .container {
     text-align: center;
   }
@@ -1851,7 +1854,7 @@ body {
     margin-top: 5px;
   }
   .header-area {
-    top: 0px;
+    top: 100%;
   }
   .main-banner {
     margin-top: 100px;
