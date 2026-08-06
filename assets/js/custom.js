@@ -39,8 +39,13 @@ function buildWhatsAppLink(message) {
 
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
+	  var offset = 60;
+	  var $preHeader = $('.pre-header');
+	  if ($preHeader.length && $preHeader.outerHeight() > 0) {
+	    offset = $preHeader.outerHeight();
+	  }
 
-	  if (scroll >= 60) {
+	  if (scroll >= offset) {
 	    $("header").addClass("background-header");
 	  } else {
 	    $("header").removeClass("background-header");
